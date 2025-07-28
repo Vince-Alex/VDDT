@@ -5,6 +5,11 @@ import yt_dlp
 import sys
 import colorama
 from colorama import Fore, Style
+from check_deps import check_and_install
+
+if not check_and_install():
+    sys.exit(1)
+
 
 def main():
     """
@@ -13,7 +18,7 @@ def main():
     print("=" * 40)
     print(f"{Fore.CYAN}欢迎使用 VDDT 多功能下载器{Style.RESET_ALL}")
     print(f"{Fore.CYAN}作者: Alex (基于 yt-dlp){Style.RESET_ALL}")
-    print(f"{Fore.CYAN}版本: 2.0.0-beta{Style.RESET_ALL}")
+    print(f"{Fore.CYAN}版本: 2.0.5-beta{Style.RESET_ALL}")
     print("=" * 40)
     print("确保已安装 yt-dlp")
     print("以及 ffmpeg (用于合并、转码、嵌入封面等)")
