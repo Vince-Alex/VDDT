@@ -12,9 +12,6 @@ if not check_and_install():
 
 
 def main():
-    """
-    运行下载器脚本的主函数
-    """
     print("=" * 40)
     print(f"{Fore.CYAN}欢迎使用 VDDT 多功能下载器{Style.RESET_ALL}")
     print(f"{Fore.CYAN}作者: Alex (基于 yt-dlp){Style.RESET_ALL}")
