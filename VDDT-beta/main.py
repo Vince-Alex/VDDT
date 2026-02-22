@@ -65,11 +65,6 @@ def main():
             file_path = input(file_path_prompt).strip()
             if not file_path:
                 file_path = default_batch_file
-        elif choice == '3':
-            from offline_transcoder import run_offline_transcoder
-            run_offline_transcoder()
-            break
-
 
             if not os.path.exists(file_path):
                 print(f"{Fore.RED}[错误]{Style.RESET_ALL} 文件 '{file_path}' 不存在。请创建该文件并将视频链接放入其中，每行一个。")
@@ -100,8 +95,12 @@ def main():
             except Exception as e:
                 print(f"{Fore.RED}[错误]{Style.RESET_ALL} 处理批量下载时发生未知错误: {e}")
             break
+        elif choice == '3':
+            from offline_transcoder import run_offline_transcoder
+            run_offline_transcoder()
+            break
         else:
-            print(f"{Fore.RED}无效选择，请输入 0, 1 或 2。{Style.RESET_ALL}")
+            print(f"{Fore.RED}无效选择，请输入 0, 1, 2 或 3。{Style.RESET_ALL}")
 
     print("\n" + "=" * 40)
     print(f"{Fore.CYAN}所有任务已完成。{Style.RESET_ALL}")

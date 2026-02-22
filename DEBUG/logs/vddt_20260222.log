@@ -1,0 +1,387 @@
+[2026-02-22 01:24:30] [INFO] [logger.py:123] 配置文件不存在，创建默认配置: vddt_config.json
+[2026-02-22 01:24:30] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 01:24:52] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 01:24:52] [INFO] [logger.py:123] 程序正常退出
+[2026-02-22 01:32:30] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 01:32:36] [ERROR] [logger.py:139] 未知错误: name 'urwid' is not defined
+Traceback (most recent call last):
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/main.py", line 449, in main
+    from tui import run_tui, check_tui_support
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 61, in <module>
+    class MenuItem(urwid.Button):
+                   ^^^^^
+NameError: name 'urwid' is not defined
+[2026-02-22 01:38:26] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 01:38:26] [INFO] [logger.py:123] 程序正常退出
+[2026-02-22 01:38:30] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 01:38:37] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 01:38:37] [INFO] [logger.py:123] 程序正常退出
+[2026-02-22 01:39:00] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 01:39:02] [ERROR] [logger.py:139] TUI 启动失败: property 'label' of 'MenuItem' object has no setter
+Traceback (most recent call last):
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 562, in run_tui
+    app.run()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 260, in run
+    self.main_widget = self._build_main_ui()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 281, in _build_main_ui
+    self.menu = self._build_main_menu()
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 304, in _build_main_menu
+    MenuItem("下载单个视频", self._on_single_download, shortcut="1"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 68, in __init__
+    self.label = label
+    ^^^^^^^^^^
+AttributeError: property 'label' of 'MenuItem' object has no setter
+[2026-02-22 01:41:36] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 01:41:36] [INFO] [logger.py:123] 程序正常退出
+[2026-02-22 01:41:38] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 01:41:40] [ERROR] [logger.py:139] TUI 启动失败: Invalid markup element: <AttrMap selectable fixed/flow widget <SelectableIcon selectable fixed/flow widget '  [1] 下载单个视频'> attr_map={None: 'menu_item'} focus_map={None: 'menu_focus'}>
+Traceback (most recent call last):
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 562, in run_tui
+    app.run()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 260, in run
+    self.main_widget = self._build_main_ui()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 281, in _build_main_ui
+    self.menu = self._build_main_menu()
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 304, in _build_main_menu
+    MenuItem("下载单个视频", self._on_single_download, shortcut="1"),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 74, in __init__
+    self._update_label()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 81, in _update_label
+    self.set_label(urwid.AttrMap(urwid.SelectableIcon(text, 1),
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/widget/wimp.py", line 726, in set_label
+    self._label.set_text(label)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/widget/text.py", line 122, in set_text
+    self._text, self._attrib = decompose_tagmarkup(markup)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/util.py", line 436, in decompose_tagmarkup
+    tl, al = _tagmarkup_recurse(tm, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/util.py", line 481, in _tagmarkup_recurse
+    raise TagMarkupException(f"Invalid markup element: {tm!r}")
+urwid.util.TagMarkupException: Invalid markup element: <AttrMap selectable fixed/flow widget <SelectableIcon selectable fixed/flow widget '  [1] 下载单个视频'> attr_map={None: 'menu_item'} focus_map={None: 'menu_focus'}>
+[2026-02-22 01:42:50] [ERROR] [logger.py:139] TUI 启动失败: Invalid markup element: <AttrMap selectable fixed/flow widget <SelectableIcon selectable fixed/flow widget '  [1] 下载单个视频'> attr_map={None: 'menu_item'} focus_map={None: 'menu_focus'}>
+Traceback (most recent call last):
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 562, in run_tui
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 260, in run
+    self.logger = get_logger()
+                       ^^^^^^^^
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 281, in _build_main_ui
+    try:
+         
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 304, in _build_main_menu
+    header=title,
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 74, in __init__
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 81, in _update_label
+    if self.shortcut:
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/widget/wimp.py", line 726, in set_label
+    self._label.set_text(label)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/widget/text.py", line 122, in set_text
+    self._text, self._attrib = decompose_tagmarkup(markup)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/util.py", line 436, in decompose_tagmarkup
+    tl, al = _tagmarkup_recurse(tm, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/util.py", line 481, in _tagmarkup_recurse
+    raise TagMarkupException(f"Invalid markup element: {tm!r}")
+urwid.util.TagMarkupException: Invalid markup element: <AttrMap selectable fixed/flow widget <SelectableIcon selectable fixed/flow widget '  [1] 下载单个视频'> attr_map={None: 'menu_item'} focus_map={None: 'menu_focus'}>
+[2026-02-22 01:42:53] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 01:42:53] [INFO] [logger.py:123] 程序正常退出
+[2026-02-22 01:42:55] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 01:42:58] [ERROR] [logger.py:139] TUI 启动失败: 'MenuList' object has no attribute 'rows'
+Traceback (most recent call last):
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 574, in run_tui
+    app.run()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 282, in run
+    self.loop.run()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/main_loop.py", line 339, in run
+    self._run()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/main_loop.py", line 441, in _run
+    self.event_loop.run()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/select_loop.py", line 182, in run
+    self._loop()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/select_loop.py", line 224, in _loop
+    alarm_callback()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/main_loop.py", line 645, in entering_idle
+    self.draw_screen()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/main_loop.py", line 662, in draw_screen
+    canvas = self._topmost_widget.render(self.screen_size, focus=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/widget/widget.py", line 112, in cached_render
+    canv = fn(self, size, focus=focus)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/widget/frame.py", line 472, in render
+    body = self.body.render((maxcol, maxrow - ftrim - htrim), focus and self.focus_part == "body")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/widget/widget.py", line 112, in cached_render
+    canv = fn(self, size, focus=focus)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/widget/attr_map.py", line 158, in render
+    canv = self._original_widget.render(size, focus=focus)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/widget/widget.py", line 112, in cached_render
+    canv = fn(self, size, focus=focus)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/widget/filler.py", line 240, in render
+    top, bottom = self.filler_values(size, focus)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/widget/filler.py", line 210, in filler_values
+    height = self._original_widget.rows((maxcol,), focus=focus)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MenuList' object has no attribute 'rows'
+[2026-02-22 01:44:40] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 01:44:40] [INFO] [logger.py:123] 程序正常退出
+[2026-02-22 01:44:42] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 01:46:32] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 01:46:32] [INFO] [logger.py:123] 程序正常退出
+[2026-02-22 11:28:09] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 11:28:12] [ERROR] [logger.py:139] TUI 启动失败: ProgressBar.__init__() got an unexpected keyword argument 'text_style'
+Traceback (most recent call last):
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 1112, in run_tui
+    app.run()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 548, in run
+    self.main_widget = self._build_main_ui()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 597, in _build_main_ui
+    self.progress = ProgressBar("下载进度")
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 397, in __init__
+    self._bar = urwid.ProgressBar('progress_bg', 'progress_fg',
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ProgressBar.__init__() got an unexpected keyword argument 'text_style'
+[2026-02-22 11:30:20] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 11:30:20] [INFO] [logger.py:123] 程序正常退出
+[2026-02-22 11:30:22] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 11:30:41] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 11:31:47] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 11:31:52] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 11:31:52] [INFO] [logger.py:123] 程序正常退出
+[2026-02-22 11:41:56] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 11:42:11] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 11:42:21] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 11:42:30] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 11:42:33] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 11:42:33] [INFO] [logger.py:123] 程序正常退出
+[2026-02-22 11:57:30] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 11:57:30] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 11:57:30] [ERROR] [logger.py:139] TUI 启动失败: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 1182, in run_tui
+    app.run()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 533, in run
+    self.loop.run()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/main_loop.py", line 339, in run
+    self._run()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/main_loop.py", line 441, in _run
+    self.event_loop.run()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/select_loop.py", line 182, in run
+    self._loop()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/select_loop.py", line 192, in _loop
+    selector.register(fd, selectors.EVENT_READ, callback)
+  File "/data/data/com.termux/files/usr/lib/python3.12/selectors.py", line 359, in register
+    self._selector.register(key.fd, poller_events)
+PermissionError: [Errno 1] Operation not permitted
+[2026-02-22 11:59:53] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 11:59:53] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 11:59:53] [ERROR] [logger.py:139] TUI 启动失败: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/selector_events.py", line 282, in _add_reader
+    key = self._selector.get_key(fd)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/selectors.py", line 192, in get_key
+    raise KeyError("{!r} is not registered".format(fileobj)) from None
+KeyError: '0 is not registered'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 1184, in run_tui
+    app.run()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 535, in run
+    self.loop.run()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/main_loop.py", line 339, in run
+    self._run()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/main_loop.py", line 432, in _run
+    self.start()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/main_loop.py", line 403, in start
+    self._reset_input_descriptors()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/main_loop.py", line 428, in _reset_input_descriptors
+    self.screen.hook_event_loop(self.event_loop, self._update)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/display/_posix_raw_display.py", line 288, in hook_event_loop
+    handles = [event_loop.watch_file(fd if isinstance(fd, int) else fd.fileno(), wrapper) for fd in fds]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/asyncio_loop.py", line 193, in watch_file
+    self._loop.add_reader(fd, self._also_call_idle(callback))
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/selector_events.py", line 357, in add_reader
+    self._add_reader(fd, callback, *args)
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/selector_events.py", line 284, in _add_reader
+    self._selector.register(fd, selectors.EVENT_READ,
+  File "/data/data/com.termux/files/usr/lib/python3.12/selectors.py", line 359, in register
+    self._selector.register(key.fd, poller_events)
+PermissionError: [Errno 1] Operation not permitted
+[2026-02-22 12:00:16] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 12:00:16] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 12:00:16] [ERROR] [logger.py:139] TUI 启动失败: [Errno 1] Operation not permitted
+Traceback (most recent call last):
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 1184, in run_tui
+    app.run()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 535, in run
+    self.loop.run()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/main_loop.py", line 339, in run
+    self._run()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/main_loop.py", line 441, in _run
+    self.event_loop.run()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/select_loop.py", line 182, in run
+    self._loop()
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/urwid/event_loop/select_loop.py", line 192, in _loop
+    selector.register(fd, selectors.EVENT_READ, callback)
+  File "/data/data/com.termux/files/usr/lib/python3.12/selectors.py", line 359, in register
+    self._selector.register(key.fd, poller_events)
+PermissionError: [Errno 1] Operation not permitted
+[2026-02-22 12:05:58] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 12:07:13] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 12:07:15] [ERROR] [logger.py:139] TUI 启动失败: module 'curses' has no attribute 'COLOR_GRAY'
+Traceback (most recent call last):
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 793, in run_tui
+    curses.wrapper(main)
+  File "/data/data/com.termux/files/usr/lib/python3.12/curses/__init__.py", line 94, in wrapper
+    return func(stdscr, *args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 789, in main
+    app = VDDTApp(stdscr, config)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 351, in __init__
+    init_colors()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 71, in init_colors
+    curses.init_pair(6, curses.COLOR_GRAY, -1)            # menu_disabled
+                        ^^^^^^^^^^^^^^^^^
+AttributeError: module 'curses' has no attribute 'COLOR_GRAY'. Did you mean: 'COLOR_CYAN'?
+[2026-02-22 12:07:18] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 12:07:18] [INFO] [logger.py:123] 程序正常退出
+[2026-02-22 12:07:34] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 12:07:34] [ERROR] [logger.py:139] TUI 启动失败: module 'curses' has no attribute 'COLOR_GRAY'
+Traceback (most recent call last):
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 793, in run_tui
+    curses.wrapper(main)
+  File "/data/data/com.termux/files/usr/lib/python3.12/curses/__init__.py", line 94, in wrapper
+    return func(stdscr, *args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 789, in main
+    app = VDDTApp(stdscr, config)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 351, in __init__
+    init_colors()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 71, in init_colors
+    curses.init_pair(6, curses.COLOR_GRAY, -1)            # menu_disabled
+                        ^^^^^^^^^^^^^^^^^
+AttributeError: module 'curses' has no attribute 'COLOR_GRAY'. Did you mean: 'COLOR_CYAN'?
+[2026-02-22 12:09:37] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 12:09:37] [ERROR] [logger.py:139] TUI 启动失败: addwstr() returned ERR
+Traceback (most recent call last):
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 793, in run_tui
+    curses.wrapper(main)
+  File "/data/data/com.termux/files/usr/lib/python3.12/curses/__init__.py", line 94, in wrapper
+    return func(stdscr, *args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 790, in main
+    app.run()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 391, in run
+    self._draw()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 479, in _draw
+    self.stdscr.addstr(h - 1, 0, " H:帮助 | Q:返回/退出 | Ctrl+C:强制退出 ".center(w))
+_curses.error: addwstr() returned ERR
+[2026-02-22 12:11:19] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 12:11:38] [ERROR] [logger.py:139] TUI 启动失败: addwstr() returned ERR
+Traceback (most recent call last):
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 803, in run_tui
+    curses.wrapper(main)
+  File "/data/data/com.termux/files/usr/lib/python3.12/curses/__init__.py", line 94, in wrapper
+    return func(stdscr, *args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 800, in main
+    app.run()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 392, in run
+    self._handle_input()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 510, in _handle_input
+    callback()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 750, in _on_about
+    MessageDialog(self.stdscr, "关于 VDDT", about_text.strip(), 'info').show()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 141, in show
+    self._center_text(self.message, 2)
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 124, in _center_text
+    self.win.addstr(y, max(1, x), text)
+_curses.error: addwstr() returned ERR
+[2026-02-22 12:17:48] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 12:18:14] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 12:22:41] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 12:22:53] [ERROR] [logger.py:139] TUI 运行时错误: 'NetworkConfig' object has no attribute 'retries'
+Traceback (most recent call last):
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 915, in main
+    app.run()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 430, in run
+    self._handle_input()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 548, in _handle_input
+    callback()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 804, in _on_settings_network
+    (f"重试次数: {self.config.network.retries}", 'retries'),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NetworkConfig' object has no attribute 'retries'
+[2026-02-22 12:22:53] [ERROR] [logger.py:139] TUI 启动失败: 'NetworkConfig' object has no attribute 'retries'
+Traceback (most recent call last):
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 921, in run_tui
+    curses.wrapper(main)
+  File "/data/data/com.termux/files/usr/lib/python3.12/curses/__init__.py", line 94, in wrapper
+    return func(stdscr, *args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 915, in main
+    app.run()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 430, in run
+    self._handle_input()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 548, in _handle_input
+    callback()
+  File "/storage/emulated/0/CODE/Vince-Alex/VDDT/DEBUG/tui.py", line 804, in _on_settings_network
+    (f"重试次数: {self.config.network.retries}", 'retries'),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NetworkConfig' object has no attribute 'retries'
+[2026-02-22 12:26:14] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 12:27:03] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 12:48:33] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 12:49:02] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 14:59:03] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 14:59:26] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 14:59:29] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 14:59:29] [INFO] [logger.py:123] 程序正常退出
+[2026-02-22 15:02:39] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 15:02:52] [INFO] [logger.py:123] 用户中断退出
+[2026-02-22 15:02:52] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 15:02:52] [INFO] [logger.py:123] 程序退出并保存配置
+[2026-02-22 15:06:57] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 15:08:18] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 15:08:18] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 15:08:18] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 15:08:18] [INFO] [logger.py:123] 程序退出并保存配置
+[2026-02-22 15:09:55] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 15:10:12] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 15:10:12] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 15:10:12] [INFO] [logger.py:123] 程序退出并保存配置
+[2026-02-22 15:16:31] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 15:16:39] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 15:16:39] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 15:16:39] [INFO] [logger.py:123] 程序退出并保存配置
+[2026-02-22 15:18:45] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 15:30:07] [INFO] [logger.py:123] 用户中断退出
+[2026-02-22 15:30:07] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 15:30:07] [INFO] [logger.py:123] 程序退出并保存配置
+[2026-02-22 15:30:09] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 15:30:33] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 15:30:33] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 15:30:33] [INFO] [logger.py:123] 程序退出并保存配置
+[2026-02-22 15:33:06] [INFO] [logger.py:123] 配置加载成功: vddt_config.json
+[2026-02-22 15:33:56] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 15:33:56] [INFO] [logger.py:123] 配置已保存: vddt_config.json
+[2026-02-22 15:33:56] [INFO] [logger.py:123] 程序退出并保存配置

@@ -3,6 +3,7 @@ import colorama
 from colorama import Fore, Style
 import os
 import sys
+import time
 import datetime
 import urllib.parse
 from utils import ask, sanitize_filename, progress_hook, convert_to_netscape_cookie

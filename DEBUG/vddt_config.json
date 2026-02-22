@@ -1,0 +1,36 @@
+{
+  "download": {
+    "output_dir": "VDDT_Downloads",
+    "default_mode": 1,
+    "concurrent_downloads": 5,
+    "max_retries": 10,
+    "filename_template": "%(upload_date)s_%(uploader)s_%(title)s.%(ext)s",
+    "download_subtitles": false,
+    "subtitle_languages": [
+      "zh-Hans",
+      "zh-CN",
+      "en"
+    ],
+    "embed_thumbnail": true,
+    "download_danmaku": false
+  },
+  "transcode": {
+    "default_preset": 1,
+    "video_codec": "libx264",
+    "audio_codec": "aac",
+    "crf": 23,
+    "preset": "medium",
+    "audio_bitrate": "192k"
+  },
+  "network": {
+    "proxy": null,
+    "timeout": 30,
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  },
+  "ui": {
+    "progress_bar_length": 40,
+    "verbose": false,
+    "color_output": true
+  },
+  "version": "2.1.0"
+}
